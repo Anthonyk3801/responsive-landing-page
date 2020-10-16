@@ -110,3 +110,57 @@ button:hover {
   margin-top: 40px;
   margin-left: 20px;
 }
+
+/*youtube video*/
+iframe {
+  margin-top: 70px;
+}
+
+h1, p {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+div {
+  text-align: center;
+}
+/*borders with the pices for trumbones*/
+#box {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.trom {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 13px;
+}
+
+ol {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+/*money for the trumbones*/
+.money {
+  font-size: 25px;
+  font-weight: 550;
+}
