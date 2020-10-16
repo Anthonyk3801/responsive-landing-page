@@ -89,3 +89,24 @@ button:hover {
   background-color: #f3ab0f;
   transition-delay: .5s;
 }
+
+/*text beside the picture*/
+.picture-text {
+  display: flex;
+}
+
+.picture {
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 78vw;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+}
