@@ -2,9 +2,39 @@
 /* Apply to all sizes */
 *, *:before, *:after {
   box-sizing: border-box;
+  margin: 0;
 }
 
+/*nav on the top*/
+#first {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(238, 235, 235);
+  padding: 20px;
+  font-size: 17px;
+  width: 100%;
+}
 
-/* Add Breakpoints Here */
-/* Apply to certain size and above */
+.head {
+  position: fixed;
+  top: 0;
+  background-color: rgb(238, 235, 235);
+}
 
+div.head {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(238, 235, 235);
+  padding: 20px;
+  font-size: 17px;
+}
+
+ul, .nav {
+  list-style-type: none;
+  cursor: pointer;
+  padding-left: 7vw;
+  float: right;
+  margin-right: 10px;
+}
