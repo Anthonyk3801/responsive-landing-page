@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+/*sizing images*/
+img {
+  width: 240px;
+}
+
 /*nav on the top*/
 #first {
   position: -webkit-sticky;
