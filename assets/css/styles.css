@@ -3,9 +3,9 @@
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
+  background-color: rgb(238, 235, 235);
 }
 
-/*sizing images*/
 img {
   width: 240px;
 }
@@ -38,12 +38,12 @@ div.head {
 
 ul, .nav {
   list-style-type: none;
+  /*display: inline-block;*/
   cursor: pointer;
   padding-left: 7vw;
   float: right;
   margin-right: 10px;
 }
-
 /*nav links at the top*/
 a {
   text-decoration: none;
@@ -63,7 +63,6 @@ a {
   margin-top: 15px;
   padding: 6px;
 }
-
 /*submit button below the email*/
 input[type="submit"] {
   font-size: 15px;
@@ -94,14 +93,13 @@ button:hover {
   background-color: #f3ab0f;
   transition-delay: .5s;
 }
-
 /*text beside the picture*/
 .picture-text {
   display: flex;
 }
 
 .picture {
-  width: 8vw;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +113,6 @@ button:hover {
   margin-top: 40px;
   margin-left: 20px;
 }
-
 /*youtube video*/
 iframe {
   margin-top: 70px;
@@ -169,29 +166,31 @@ ol {
   font-size: 25px;
   font-weight: 550;
 }
-
-/*footer*/
+/*nav footer*/
 .end {
   margin-left: 30px;
-  justify-content: flex-end;
+}
+
+nav {
+   float: right;
+   margin-right: 10px;
 }
 
 .copyright {
-  margin-top: 20px;
+  margin-top: 10px;
   padding-right: 30px;
   font-size: 14px;
-  padding-bottom: 10px;
-  justify-content: flex-end;
+  padding-bottom: 20px;
+  text-align: right;
 }
 
 /* Add Breakpoints Here */
 /* Apply to certain size and above */
-@media (max-width: 500px) {
+@media (max-width: 520px) {
 #first {
 flex-wrap: wrap;
 background-color: rgb(238, 235, 235);
 display: flex;
-position: fixed;
 }
 }
 
@@ -203,7 +202,7 @@ padding: 0;
 }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 520px) {
 .head a {
 align-items: center;
 text-align: center;
@@ -213,12 +212,13 @@ flex-direction: column;
 padding: 0 130px;
 margin-top: 23px;
 font-size: 14px;
+position: relative;
 }
 }
 
 @media (max-width: 650px) {
 #top {
-margin-top: 250px;
+margin-top: 60px;
 align-items: center;
 }
 }
@@ -246,7 +246,7 @@ flex-direction: column;
 width: 100%;
 max-width: 300px;
 margin: 0 auto;
-margin-bottom: 40px;
+margin-bottom: 30px;
 height: 250px;
 }
 }
