@@ -1,60 +1,60 @@
-/* General Styles */
-/* Apply to all sizes */
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
   background-color: rgb(238, 235, 235);
 }
 
+/*nav and picture sticks to the top when scrolling down*/
+#head {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+div#head {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(238, 235, 235);
+  padding: 20px;
+  font-size: 17px;
+}
+
+/*when page gets smaller the image starts moving to right side at the top*/
+.pic {
+  width: 34vw;
+}
+
+/*sets how big the image is at the top*/
 img {
   width: 240px;
 }
 
-/*nav on the top*/
-#first {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: rgb(238, 235, 235);
-  padding: 20px;
-  font-size: 17px;
-  width: 100%;
+/*nav stays to the right side*/
+.top-nav {
+  display: flex;
+  position: relative;
+  left: 20%;
+  margin-top: 15px;
 }
 
-.head {
-  position: fixed;
-  top: 0;
-  background-color: rgb(238, 235, 235);
+.links {
+  margin-right: 4vw;
 }
 
-div.head {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: rgb(238, 235, 235);
-  padding: 20px;
-  font-size: 17px;
-}
-
-ul, .nav {
-  list-style-type: none;
-  /*display: inline-block;*/
-  cursor: pointer;
-  padding-left: 7vw;
-  float: right;
-  margin-right: 10px;
-}
-/*nav links at the top*/
+/*changes how nav links look*/
 a {
   text-decoration: none;
   color: black;
 }
-/*targets h1 and the form below the nav*/
+
+/*puts form and h1 in a column*/
 #top {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 10px;
   flex-direction: column;
   align-items: center;
 }
@@ -63,6 +63,7 @@ a {
   margin-top: 15px;
   padding: 6px;
 }
+
 /*submit button below the email*/
 input[type="submit"] {
   font-size: 15px;
@@ -73,12 +74,50 @@ input[type="submit"] {
   border: none;
   margin-top: 15px;
 }
+
 /*button changes color when hovered over submit*/
 #submit:hover {
   background-color: #f3ab0f;
   transition-delay: .5s;
 }
 
+/*puts the middle section in a column and centers them*/
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+}
+
+.picture-text {
+  width: 80%;
+}
+
+/*pictures for middle section*/
+.picture {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-right: 20px;
+}
+
+/*sets h1 in the middle to align left of the page*/
+.middle {
+  text-align: left;
+}
+
+/*youtube video*/
+iframe {
+  margin-top: 70px;
+}
+
+/*youtube video in the center of page*/
+div {
+  text-align: center;
+}
+
+/*tagets the buttons for the prices of different trumbones*/
 button {
   background-color: #f1c40f;
   text-transform: uppercase;
@@ -89,33 +128,10 @@ button {
   padding: 8px 15px;
 }
 
+/*when hovered over buttons the background turns a different color*/
 button:hover {
   background-color: #f3ab0f;
   transition-delay: .5s;
-}
-/*text beside the picture*/
-.picture-text {
-  display: flex;
-}
-
-.picture {
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text {
-  width: 78vw;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  margin-top: 40px;
-  margin-left: 20px;
-}
-/*youtube video*/
-iframe {
-  margin-top: 70px;
 }
 
 h1, p {
@@ -125,13 +141,12 @@ h1, p {
   padding-top: 20px;
 }
 
+/*the paragrapg in the middle to align left on page*/
 p {
   padding-bottom: 20px;
+  text-align: left;
 }
 
-div {
-  text-align: center;
-}
 /*borders with the pices for trumbones*/
 #box {
   margin-top: 36px;
@@ -140,6 +155,7 @@ div {
   flex-direction: row;
 }
 
+/*everything for the boxes under video*/
 .trom {
   border: 1px solid black;
   display: flex;
@@ -150,32 +166,43 @@ div {
   text-align: center;
 }
 
+/*h2 in the boxes*/
 h2 {
   font-size: 17px;
   text-transform: uppercase;
-  padding: 13px;
+  padding-top: 10px;
 }
 
+/*money for the trumbones*/
+.money {
+  font-size: 23px;
+  font-weight: 550;
+  padding-top: 10px;
+}
+
+/*lists in the box*/
 ol {
   list-style-type: none;
   text-align: center;
   padding: 0;
 }
-/*money for the trumbones*/
-.money {
-  font-size: 25px;
-  font-weight: 550;
+
+li {
+  padding-top: 10px;
 }
+
+/*nave at the bottom*/
+nav {
+  float: right;
+  margin-right: 10px;
+}
+
 /*nav footer*/
 .end {
   margin-left: 30px;
 }
 
-nav {
-   float: right;
-   margin-right: 10px;
-}
-
+/*copyright section*/
 .copyright {
   margin-top: 10px;
   padding-right: 30px;
@@ -186,67 +213,90 @@ nav {
 
 /* Add Breakpoints Here */
 /* Apply to certain size and above */
-@media (max-width: 520px) {
-#first {
-flex-wrap: wrap;
-background-color: rgb(238, 235, 235);
-display: flex;
+@media (max-width: 550px) {
+.top-nav {
+  background-color: rgb(238, 235, 235);
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.links {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+nav {
+  float: right;
+  margin-right: 10px;
+}
+#head a {
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.middle {
+  text-align: center;
+}
+p {
+  padding-bottom: 20px;
+  text-align: center;
 }
 }
 
 @media (max-width: 450px) {
 .text {
-width: 100%;
-text-align: center;
-padding: 0;
+  width: 100%;
+  text-align: center;
 }
-}
-
-@media (max-width: 520px) {
-.head a {
-align-items: center;
-text-align: center;
-width: 100%;
-display: flex;
-flex-direction: column;
-padding: 0 130px;
-margin-top: 23px;
-font-size: 14px;
-position: relative;
+#head {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 }
 
 @media (max-width: 650px) {
 #top {
-margin-top: 60px;
-align-items: center;
+  margin-top: 60px;
+  align-items: center;
+}
+.picture-text {
+  margin-top: 100px;
+}
+.picture {
+  display: none;
+}
+.top-nav {
+  flex-wrap: wrap;
+  background-color: rgb(238, 235, 235);
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 }
 
 @media (max-width: 650px) {
-.picture-text {
-margin-top: 100px;
-}
-}
-
-@media (max-width: 550px) {
-.picture {
-display: none;
-}
-}
-
-@media (max-width: 700px) {
 #box {
-flex-direction: column;
+  flex-direction: column;
 }
-}
-
-@media (max-width: 700px) {
 .trom {
-width: 100%;
-max-width: 300px;
-margin: 0 auto;
-margin-bottom: 30px;
-height: 250px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 250px;
+}
+ol li {
+  padding-top: 15px;
+}
+.money {
+  padding-top: 10px;
 }
 }
