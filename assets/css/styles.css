@@ -27,6 +27,7 @@ div#head {
 /*when page gets smaller the image starts moving to right side at the top*/
 .pic {
   width: 34vw;
+  margin-top: 20px;
 }
 
 /*sets how big the image is at the top*/
@@ -246,22 +247,19 @@ nav {
 p {
   padding-bottom: 20px;
   text-align: center;
-}
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 .text {
   width: 100%;
   text-align: center;
 }
 #head {
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 #top {
   margin-top: 60px;
   align-items: center;
@@ -279,16 +277,15 @@ p {
   text-align: center;
   margin-top: 10px;
   padding-top: 10px;
-}
+  }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 #box {
   flex-direction: column;
 }
 .trom {
-  width: 100%;
-  max-width: 300px;
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 30px;
   height: 250px;
@@ -298,5 +295,5 @@ ol li {
 }
 .money {
   padding-top: 10px;
-}
+  }
 }
